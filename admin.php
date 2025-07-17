@@ -79,6 +79,31 @@ $result = mysqli_query($conn, "SELECT * FROM products");
         <?php endwhile; ?>
     </table>
 
+    <h3>All Users</h3>
+<table border="1" width="100%">
+    <tr>
+        <th>ID</th><th>Name</th><th>Email</th><th>Role</th><th>Actions</th>
+    </tr>
+    <?php
+    $users = mysqli_query($conn, "SELECT * FROM users");
+    while ($user = mysqli_fetch_assoc($users)) {
+    ?>
+        <tr>
+            <td><?= $user['id']; ?></td>
+            <td><?= $user['name']; ?></td>
+            <td><?= $user['email']; ?></td>
+            <td><?= $user['role']; ?></td>
+            <td>
+                <form action="admin-delete-user.php" method="POST" style="display:inline;">
+                    <input type="hidden" name="id" value="<?= $user['id']; ?>">
+                    <button type="submit" onclick="return confirm('Delete user?')">Delete</button>
+                </form>
+            </td>
+        </tr>
+    <?php } ?>
+</table>
+
+
     <br><a href="logout.php">Logout</a>
 </div>
 </body>
