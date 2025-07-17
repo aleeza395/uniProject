@@ -9,10 +9,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST["email"]);
     $password = $_POST["password"];
 
-    // Admin Login
+    // Admin Login (hardcoded)
     if ($email === "canvasandcraft@gmail.com" && $password === "ZunairaAliza123.") {
         $_SESSION["admin_logged_in"] = true;
-        header("Location: admin-dashboard.php");
+        $_SESSION["role"] = "admin";
+        $_SESSION["user_name"] = "Admin";
+        header("Location: admin.php");
         exit();
     }
 
@@ -26,13 +28,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION["user_id"] = $user["id"];
         $_SESSION["user_name"] = $user["name"];
-        header("Location: dashboard.php");
+        $_SESSION["role"] = $user["role"];
+
+        if ($user["role"] === "admin") {
+            $_SESSION["admin_logged_in"] = true;
+            header("Location: admin.php");
+        } else {
+            header("Location: dashboard.php");
+        }
         exit();
     } else {
         $message = "Invalid login credentials!";
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html>
