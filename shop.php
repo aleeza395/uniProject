@@ -19,15 +19,6 @@ $result = mysqli_query($conn, $query);
 <head>
     <title>Shop</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .container { display: flex; }
-        .sidebar { width: 250px; padding: 20px; background: #f4f4f4; }
-        .products { flex: 1; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
-        .product-card { border: 1px solid #ddd; border-radius: 8px; padding: 10px; text-align: center; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .product-card img { max-width: 100%; height: 200px; object-fit: cover; }
-        .add-cart { font-size: 24px; cursor: pointer; color: green; margin-top: 10px; }
-        .filter-label { display: block; margin: 10px 0 5px; font-weight: bold; }
-    </style>
 </head>
 <body>
     <h1 style="text-align:center;">Welcome to the Craft Vault!</h1>
