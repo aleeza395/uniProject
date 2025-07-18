@@ -14,10 +14,10 @@
 <div class="contact-container">
   <div class="contact-info">
     <h2>Get in Touch</h2>
-    <p>📍 <strong>Address:</strong> Rawalpindi, Pakistan</p>
-    <p>📞 <strong>Phone:</strong> +92-301-2345678</p>
-    <p>✉️ <strong>Email:</strong> canvasandcraft@gmail.com</p>
-    <p>⏰ <strong>Hours:</strong> Mon - Fri, 10am - 6pm</p>
+    <p><i class="fas fa-location-dot"></i> <strong>Address:</strong> Rawalpindi, Pakistan</p>
+    <p>	<i class="fas fa-phone"></i> <strong>Phone:</strong> +92-301-2345678</p>
+    <p>	<i class="fas fa-envelope"></i> <strong>Email:</strong> canvasandcraft@gmail.com</p>
+    <p>	<i class="fas fa-clock"></i> <strong>Hours:</strong> Mon - Fri, 10am - 6pm</p>
   </div>
 
   <div class="contact-form">

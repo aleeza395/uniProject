@@ -5,7 +5,6 @@
     <title>About Us | Canvas & Craft</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
 
@@ -31,15 +30,15 @@
 
 <div class="cards">
     <div class="card">
-        <h3>🎯 Our Mission</h3>
+        <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
         <p>To deliver handcrafted joy to every doorstep, while supporting local artisans and sustainable creativity.</p>
     </div>
     <div class="card">
-        <h3>🔭 Our Vision</h3>
+        <h3><i class="fas fa-eye"></i> Our Vision</h3>
         <p>To become a leading voice in artisanal craft culture — where every item is personal, unique, and made with love.</p>
     </div>
     <div class="card">
-        <h3>💖 Our Values</h3>
+        <h3><i class="fas fa-handshake"></i>  Our Values</h3>
         <p>Authenticity, Quality, Passion, and a commitment to celebrate imperfection as beauty.</p>
     </div>
 </div>

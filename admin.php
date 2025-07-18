@@ -16,13 +16,11 @@ $result = mysqli_query($conn, "SELECT * FROM products");
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
 <div class="form-container">
     <h2>Admin Dashboard</h2>
     
-    <!-- Add Product Form -->
     <form action="admin-add.php" method="POST" enctype="multipart/form-data">
         <h3>Add Product</h3>
         <input type="text" name="name" placeholder="Product Name" required>
@@ -105,7 +103,6 @@ $result = mysqli_query($conn, "SELECT * FROM products");
         </tr>
     <?php } ?>
 </table>
-
 
     <br><a href="logout.php">Logout</a>
 </div>

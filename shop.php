@@ -25,15 +25,15 @@ $result = mysqli_query($conn, $query);
 <body>
     <?php if (isset($_GET['success'])): ?>
 <script>
-    alert("🛒 Added to cart successfully!");
+    alert("Added to cart successfully!");
 </script>
 <?php endif; ?>
 
     <h1 style="text-align:center;">Welcome to the Craft Vault!</h1>
-    <p style="text-align:center;">Buy handmade dreams — your walls and ears deserve it 💫</p>
+    <p style="text-align:center;">Buy handmade dreams — your walls and ears deserve it <i class="fa-solid fa-sparkles"></i></p>
 
     <div class="container">
-        <!-- 🧩 Sidebar -->
+
         <div class="sidebar">
             <h3>Filters</h3>
             <form method="GET">
@@ -54,7 +54,6 @@ $result = mysqli_query($conn, $query);
             </form>
         </div>
 
-        <!-- 🛍️ Products -->
         <div class="products">
             <?php if (mysqli_num_rows($result) > 0): ?>
                 <?php while($row = mysqli_fetch_assoc($result)): ?>
@@ -73,7 +72,7 @@ $result = mysqli_query($conn, $query);
                     </div>
                 <?php endwhile; ?>
             <?php else: ?>
-                <p>No products match your filters 😢</p>
+                <p>No products match your filters <i class="fas fa-sad-tear"></i> </p>
             <?php endif; ?>
         </div>
     </div>

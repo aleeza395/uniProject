@@ -10,7 +10,6 @@
 </head>
 <body>
 
-<!-- HERO SECTION -->
 <section class="hero">
     <div class="hero-content">
         <h1>Welcome to MyShop</h1>
@@ -19,7 +18,6 @@
     </div>
 </section>
 
-<!-- BEST SELLERS -->
 <section class="best-sellers">
     <h2>Best Sellers</h2>
     <div class="product-grid">
@@ -41,7 +39,6 @@
     </div>
 </section>
 
-<!-- CUSTOMER REVIEWS -->
 <section class="reviews">
     <h2>What Our Customers Say</h2>
     <div class="review-grid">

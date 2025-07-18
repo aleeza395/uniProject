@@ -2,7 +2,6 @@
 session_start();
 include("config.php");
 
-// Redirect if not logged in
 if (!isset($_SESSION["user_id"])) {
     header("Location: login.php");
     exit();
@@ -10,7 +9,6 @@ if (!isset($_SESSION["user_id"])) {
 
 $user_id = $_SESSION["user_id"];
 
-// Get cart items
 $result = mysqli_query($conn, "SELECT * FROM cart WHERE user_id = $user_id");
 ?>
 
@@ -25,7 +23,7 @@ $result = mysqli_query($conn, "SELECT * FROM cart WHERE user_id = $user_id");
 <body>
 
 <nav>
-    <div><strong>🎨 Canvas & Craft</strong></div>
+    <div><strong><i class="fas fa-paint-brush"></i> Canvas & Craft</strong></div>
     <div>
         <a href="index.php">Home</a>
         <a href="dashboard.php">Dashboard</a>
@@ -34,7 +32,7 @@ $result = mysqli_query($conn, "SELECT * FROM cart WHERE user_id = $user_id");
 </nav>
 
 <div class="dashboard">
-    <h2>🛍️ Your Cart</h2>
+    <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
 
     <?php if (mysqli_num_rows($result) > 0): ?>
         <table border="1" cellpadding="10" cellspacing="0" style="margin-top: 20px; width: 80%; margin: auto; text-align: center;">
@@ -59,7 +57,7 @@ $result = mysqli_query($conn, "SELECT * FROM cart WHERE user_id = $user_id");
                 <td>
                     <form method="POST" action="remove-from-cart.php" onsubmit="return confirm('Remove item from cart?');">
                         <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
-                        <button type="submit">🗑️ Remove</button>
+                        <button type="submit"><i class="fas fa-trash-alt"></i> Remove</button>
                     </form>
                 </td>
             </tr>
@@ -70,7 +68,7 @@ $result = mysqli_query($conn, "SELECT * FROM cart WHERE user_id = $user_id");
             </tr>
         </table>
     <?php else: ?>
-        <p style="text-align:center;">🫤 Your cart is empty. Let’s fill it with some love!</p>
+        <p style="text-align:center;"><i class="fas fa-cart-arrow-down"></i> Your cart is empty. Let’s fill it with some love!</p>
     <?php endif; ?>
 
 </div>

@@ -11,11 +11,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <meta charset="UTF-8">
         <title>Message Received</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     </head>
     <body>
         <div class="thank-you">
-            <h2>Thank you, <?php echo $name; ?>! 🥳</h2>
+            <h2>Thank you, <?php echo $name; ?>! <i class="fas fa-confetti-ball"></i></h2>
             <p>We’ve received your message and will respond as soon as possible.</p>
             <a href="index.php" class="button">← Back to Home</a>
         </div>

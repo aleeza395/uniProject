@@ -9,7 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST["email"]);
     $password = $_POST["password"];
 
-    // Admin Login (hardcoded)
     if ($email === "canvasandcraft@gmail.com" && $password === "ZunairaAliza123.") {
         $_SESSION["admin_logged_in"] = true;
         $_SESSION["role"] = "admin";
@@ -18,7 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    // Regular user login
     $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();

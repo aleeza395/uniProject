@@ -10,13 +10,10 @@ if (!isset($_SESSION["user_id"])) {
 $user_id = $_SESSION["user_id"];
 $name = $_SESSION["user_name"];
 
-// Get cart items
 $cart_result = mysqli_query($conn, "SELECT * FROM cart WHERE user_id = $user_id");
 
-// Get orders
 $order_result = mysqli_query($conn, "SELECT * FROM orders WHERE user_id = $user_id");
 
-// Get reviews
 $review_result = mysqli_query($conn, "SELECT * FROM reviews WHERE user_id = $user_id");
 if (isset($_POST["submit_review"])) {
     $product = mysqli_real_escape_string($conn, $_POST["product_name"]);
@@ -27,7 +24,6 @@ if (isset($_POST["submit_review"])) {
                VALUES ($user_id, '$product', $rating, '$comment')";
     mysqli_query($conn, $insert);
 
-    // Refresh the page to show the new review in the list
     header("Location: dashboard.php");
     exit();
 }
@@ -45,7 +41,7 @@ if (isset($_POST["submit_review"])) {
 <body>
 
 <nav>
-    <div><strong>🎨 Canvas & Craft</strong></div>
+    <div><strong><i class="fas fa-paint-brush"></i> Canvas & Craft</strong></div>
     <div>
         <a href="index.php">Home</a>
         <a href="logout.php">Logout</a>
@@ -53,11 +49,10 @@ if (isset($_POST["submit_review"])) {
 </nav>
 
 <div class="dashboard">
-    <h2>Welcome, <?php echo htmlspecialchars($name); ?> 👋</h2>
+    <h2>Welcome, <?php echo htmlspecialchars($name); ?> <i class="fas fa-hand-sparkles"></i></h2>
 
-    <!-- 🛒 Cart Section -->
     <div class="section">
-        <h3>🛒 Your Cart</h3>
+        <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
         <?php if (mysqli_num_rows($cart_result) > 0): ?>
         <table>
             <tr><th>Product</th><th>Quantity</th><th>Price</th></tr>
@@ -74,9 +69,8 @@ if (isset($_POST["submit_review"])) {
         <?php endif; ?>
     </div>
 
-    <!-- 📦 Orders Section -->
     <div class="section">
-        <h3>📦 Your Orders</h3>
+        <h3><i class="fas fa-box"></i> Your Orders</h3>
         <?php if (mysqli_num_rows($order_result) > 0): ?>
         <table>
             <tr><th>Order ID</th><th>Date</th><th>Total</th></tr>
@@ -93,20 +87,18 @@ if (isset($_POST["submit_review"])) {
         <?php endif; ?>
     </div>
 
-    <!-- ⭐ Reviews Section -->
 <div class="section">
-    <h3>⭐ Your Reviews</h3>
+    <h3><i class="fas fa-star"></i> Your Reviews</h3>
 
-    <!-- Review Form -->
     <form action="" method="POST">
         <input type="text" name="product_name" placeholder="Product Name" required>
         <select name="rating" required>
             <option value="">Rating</option>
-            <option value="1">1 - 😞</option>
-            <option value="2">2 - 😐</option>
-            <option value="3">3 - 🙂</option>
-            <option value="4">4 - 😃</option>
-            <option value="5">5 - 🤩</option>
+            <option value="1">1 - <i class="fas fa-star"></i></option>
+            <option value="2">2 - <i class="fas fa-star"></i></option>
+            <option value="3">3 - <i class="fas fa-star"></i></option>
+            <option value="4">4 - <i class="fas fa-star"></i></option>
+            <option value="5">5 - <i class="fas fa-star"></i></option>
         </select>
         <textarea name="comment" placeholder="Your comment..." required></textarea>
         <button type="submit" name="submit_review">Submit Review</button>
@@ -118,7 +110,6 @@ if (isset($_POST["submit_review"])) {
 
     <hr>
 
-    <!-- Review Table -->
     <?php if (mysqli_num_rows($review_result) > 0): ?>
     <table>
         <tr><th>Product</th><th>Rating</th><th>Comment</th></tr>
