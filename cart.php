@@ -19,6 +19,8 @@ $result = mysqli_query($conn, "SELECT * FROM cart WHERE user_id = $user_id");
 <head>
     <title>Your Cart</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
