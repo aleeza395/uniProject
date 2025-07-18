@@ -6,8 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST["name"]);
     $email = trim($_POST["email"]);
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
-
-    // Check if email already exists
+    
     $check = mysqli_query($conn, "SELECT * FROM users WHERE email='$email'");
     if (mysqli_num_rows($check) > 0) {
         $message = "Email already exists!";
