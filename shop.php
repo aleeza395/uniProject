@@ -30,7 +30,7 @@ $result = mysqli_query($conn, $query);
 <?php endif; ?>
 
     <h1 style="text-align:center;">Welcome to the Craft Vault!</h1>
-    <p style="text-align:center;">Buy handmade dreams — your walls and ears deserve it <i class="fa-solid fa-sparkles"></i></p>
+    <p style="text-align:center;">Buy handmade dreams — your walls and ears deserve it <i class="fas fa-star"></i></p>
 
     <div class="container">
 
@@ -66,7 +66,7 @@ $result = mysqli_query($conn, $query);
     <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">
     <input type="hidden" name="product_name" value="<?php echo $row['name']; ?>">
     <input type="hidden" name="price" value="<?php echo $row['price']; ?>">
-    <button type="submit" class="add-cart">🛒</button>
+    <button type="submit" class="add-cart"><i class="fas fa-shopping-cart"></i></button>
 </form>
 
                     </div>
