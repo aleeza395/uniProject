@@ -15,5 +15,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               VALUES ('$name', '$price', '$image', '$category')";
     mysqli_query($conn, $query);
 
-    header("Location: admin-dashboard.php");
+    header("Location: admin.php");
 }
