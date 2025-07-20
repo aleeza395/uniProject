@@ -4,7 +4,7 @@ body {
 }
 
 .site-footer {
-    background-color: #222;
+    background-color: #dbbfab;
     color: #fff;
     padding: 30px 20px;
     text-align: center;
@@ -35,7 +35,7 @@ body {
 
 
 .navbar {
-    background: #222;
+    background: #dbbfab;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -53,9 +53,9 @@ body {
     text-decoration: none;
 }
 
-.hero {
-    background: url('../assets/images/hero.jpg') no-repeat center center/cover;
-    color: #fff;
+.hero { 
+    background-color: #dbbfab;
+    color: #e9e0e0;
     text-align: center;
     padding: 100px 20px;
 }
@@ -80,14 +80,14 @@ body {
 }
 
 .product-card, .review-card {
-    background: #f4f4f4;
+    background: #fff;
     padding: 20px;
     width: 200px;
     border-radius: 8px;
 }
 
 footer {
-    background: #222;
+    background:#dbbfab;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -103,7 +103,7 @@ body {
 .form-container {
     max-width: 400px;
     margin: 80px auto;
-    background: #fff;
+    background: #dbbfab;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
@@ -174,7 +174,7 @@ body {
         }
 
         .hero-overlay {
-            background: rgba(0,0,0,0.5);
+            background: #dbbfab(0,0,0,0.5);
             padding: 40px;
             max-width: 800px;
         }
@@ -340,7 +340,7 @@ body {
     }
 
     body {
-            background: #f5f6fa;
+            background: #f5e4d1;
             font-family: 'Segoe UI', sans-serif;
         }
 
