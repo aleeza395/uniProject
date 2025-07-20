@@ -22,19 +22,19 @@
     <h2>Best Sellers</h2>
     <div class="product-grid">
         <div class="product-card">
-            <img src="assets/images/product1.jpg" alt="Product 1">
+            <img src="lady.jpg" alt="Product 1">
             <h3>Product 1</h3>
-            <p>$19.99</p>
+            <p>Rs. 1000</p>
         </div>
         <div class="product-card">
-            <img src="assets/images/product2.jpg" alt="Product 2">
+            <img src="barebears.jpg" alt="Product 2">
             <h3>Product 2</h3>
-            <p>$24.99</p>
+            <p>Rs. 1000</p>
         </div>
         <div class="product-card">
-            <img src="assets/images/product3.jpg" alt="Product 3">
+            <img src="blackleaf.jpg" alt="Product 3">
             <h3>Product 3</h3>
-            <p>$14.99</p>
+            <p>Rs. 200</p>
         </div>
     </div>
 </section>
