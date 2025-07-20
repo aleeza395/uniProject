@@ -5,7 +5,7 @@ body {
 
 .site-footer {
     background-color: #dbbfab;
-    color: #fff;
+    color: #2e2a2a;
     padding: 30px 20px;
     text-align: center;
     margin-top: 60px;
@@ -16,7 +16,7 @@ body {
 }
 
 .footer-links a {
-    color: #fff;
+    color: #292525;
     margin: 0 15px;
     text-decoration: none;
     font-weight: 500;
@@ -30,13 +30,13 @@ body {
 .site-footer p {
     margin: 0;
     font-size: 14px;
-    color: #ccc;
+    color: #252121;
 }
 
 
 .navbar {
     background: #dbbfab;
-    color: #fff;
+    color: #302b2b;
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
@@ -49,13 +49,13 @@ body {
 }
 
 .nav-links li a {
-    color: #fff;
+    color: #2b2626;
     text-decoration: none;
 }
 
 .hero { 
     background-color: #dbbfab;
-    color: #e9e0e0;
+    color: #050505;
     text-align: center;
     padding: 100px 20px;
 }
@@ -88,7 +88,7 @@ body {
 
 footer {
     background:#dbbfab;
-    color: #fff;
+    color: #2b2929;
     text-align: center;
     padding: 20px;
 }
@@ -148,8 +148,8 @@ body {
         }
 
         nav {
-            background: #222;
-            color: #fff;
+            background: #dbbfab;
+            color: #1f1c1c;
             padding: 15px 30px;
             display: flex;
             justify-content: space-between;
@@ -157,7 +157,7 @@ body {
         }
 
         nav a {
-            color: #fff;
+            color: #1b1818;
             margin-left: 20px;
             text-decoration: none;
         }
@@ -170,7 +170,7 @@ body {
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: #fff;
+            color: #201c1c;
         }
 
         .hero-overlay {
@@ -263,8 +263,8 @@ body {
     }
 
     nav {
-      background: #222;
-      color: white;
+      background: #dbbfab;
+      color: rgb(43, 40, 40);
       padding: 15px 30px;
       display: flex;
       justify-content: space-between;
@@ -272,7 +272,7 @@ body {
     }
 
     nav a {
-      color: white;
+      color: rgb(34, 31, 31);
       margin-left: 20px;
       text-decoration: none;
     }
@@ -345,8 +345,8 @@ body {
         }
 
         nav {
-            background: #222;
-            color: white;
+            background: #dbbfab;
+            color: rgb(37, 34, 34);
             padding: 15px 30px;
             display: flex;
             justify-content: space-between;
@@ -354,7 +354,7 @@ body {
         }
 
         nav a {
-            color: white;
+            color: rgb(34, 30, 30);
             text-decoration: none;
             margin-left: 20px;
         }
@@ -487,4 +487,7 @@ body {
             padding: 10px 20px;
             border-radius: 6px;
         }
-        
+.navbar a, 
+.nav-links li a {
+    color: #1b1818 !important; /* use !important to force it */
+}
