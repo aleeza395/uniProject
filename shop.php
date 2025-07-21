@@ -8,9 +8,10 @@ $maxPrice = isset($_GET['max']) ? floatval($_GET['max']) : 999999;
 
 $query = "SELECT * FROM products WHERE price >= $minPrice AND price <= $maxPrice";
 if (!empty($categoryFilter)) {
-    $in = "'" . implode("','", array_map('mysqli_real_escape_string', array_fill(0, count($categoryFilter), $conn), $categoryFilter)) . "'";
+    $in = "'" . implode("','", $categoryFilter) . "'";
     $query .= " AND category IN ($in)";
 }
+
 $result = mysqli_query($conn, $query);
 ?>
 
