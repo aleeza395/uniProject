@@ -24,7 +24,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #f0a500; /* or any nice highlight color */
+    color: #f0a500; 
 }
 
 .site-footer p {
@@ -92,60 +92,6 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
-
-.form-container {
-    max-width: 400px;
-    margin: 80px auto;
-    background: #dbbfab;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.form-container input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-}
-
-.form-container button {
-    width: 95%;
-    padding: 10px;
-    background: #28a745;
-    color: white;
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.form-container a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.error {
-    color: red;
-    font-weight: bold;
-}
-
-body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            color: #333;
-        }
 
         nav {
             background: #dbbfab;
@@ -254,29 +200,6 @@ body {
             .story { flex-direction: column; }
         }
 
-
-        body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0f2f5;
-      color: #333;
-    }
-
-    nav {
-      background: #dbbfab;
-      color: rgb(43, 40, 40);
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav a {
-      color: rgb(34, 31, 31);
-      margin-left: 20px;
-      text-decoration: none;
-    }
-
     .contact-container {
       display: flex;
       flex-wrap: wrap;
@@ -339,26 +262,6 @@ body {
       }
     }
 
-    body {
-            background: #eeeae5;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        nav {
-            background: #dbbfab;
-            color: rgb(37, 34, 34);
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav a {
-            color: rgb(34, 30, 30);
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
         .dashboard {
             max-width: 1100px;
             margin: 50px auto;
@@ -392,23 +295,6 @@ body {
             padding: 10px;
             text-align: left;
             border-bottom: 1px solid #ccc;
-        }
-
-        .logout-btn {
-            background: #f44336;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 6px;
-            text-decoration: none;
-        }
-
-        .home-btn {
-            background: #007bff;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 6px;
-            text-decoration: none;
-            margin-left: 10px;
         }
 
         .btns {
@@ -489,5 +375,5 @@ body {
         }
 .navbar a, 
 .nav-links li a {
-    color: #1b1818 !important; /* use !important to force it */
+    color: #1b1818 !important; 
 }

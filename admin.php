@@ -14,8 +14,98 @@ $result = mysqli_query($conn, "SELECT * FROM products");
 <html>
 <head>
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #66350F;
+}
+
+a {
+    color: #66350F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #dbbfab;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(102, 53, 15, 0.1);
+    border: none;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #66350F;
+}
+
+form {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #66350F;
+    border-radius: 10px;
+    background-color: #fdf7f2;
+}
+
+form input, form select, form button {
+    display: block;
+    width: 95%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #66350F;
+    border-radius: 8px;
+    background-color: #fff8f2;
+    color: #66350F;
+}
+
+form button {
+    background-color: #66350F;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4a260a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #66350F;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #66350F;
+    text-align: center;
+}
+
+table th {
+    background-color: #dbbfab;
+    font-weight: bold;
+}
+
+img {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(102, 53, 15, 0.2);
+    border: none;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+    </style>
 </head>
 <body>
 <div class="form-container">
@@ -54,7 +144,6 @@ $result = mysqli_query($conn, "SELECT * FROM products");
                 <td>$<?php echo $row['price']; ?></td>
                 <td><?php echo ucfirst($row['category']); ?></td>
                 <td>
-                    <!-- Update Form -->
                     <form action="admin-update.php" method="POST" enctype="multipart/form-data" style="display:inline;">
                         <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                         <input type="text" name="name" placeholder="New name">
@@ -70,7 +159,6 @@ $result = mysqli_query($conn, "SELECT * FROM products");
                         <button type="submit">Update</button>
                     </form>
 
-                    <!-- Delete Form -->
                     <form action="admin-delete.php" method="POST" style="display:inline;">
                         <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                         <button type="submit">Delete</button>

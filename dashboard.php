@@ -101,7 +101,7 @@ if (isset($_POST["submit_review"])) {
             <option value="5">5 - <i class="fas fa-star"></i></option>
         </select>
         <textarea name="comment" placeholder="Your comment..." required></textarea>
-        <button type="submit" name="submit_review">Submit Review</button>
+        <button type="submit" name="submit_review" class="btn">Submit Review</button>
     </form>
 
     <?php if (isset($_POST["submit_review"])): ?>
