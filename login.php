@@ -8,14 +8,14 @@ $message = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST["email"]);
     $password = $_POST["password"];
-
+/*
     if ($email === "canvasandcraft@gmail.com" && $password === "ZunairaAliza123.") {
         $_SESSION["admin_logged_in"] = true;
         $_SESSION["role"] = "admin";
         $_SESSION["user_name"] = "Admin";
         header("Location: admin.php");
         exit();
-    }
+    }*/
 
     $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
