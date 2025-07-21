@@ -24,7 +24,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #f0a500; /* or any nice highlight color */
+    color: #66350F; 
 }
 
 .site-footer p {
@@ -61,7 +61,7 @@ body {
 }
 
 .btn {
-    background: #f90;
+    background: #66350F;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -121,7 +121,7 @@ body {
 .form-container button {
     width: 95%;
     padding: 10px;
-    background: #28a745;
+    background: #66350F;
     color: white;
     border: none;
     font-weight: bold;
@@ -130,7 +130,7 @@ body {
 }
 
 .form-container a {
-    color: #007bff;
+    color: #66350F;
     text-decoration: none;
 }
 
@@ -413,7 +413,7 @@ body {
         }
 
         .home-btn {
-            background: #007bff;
+            background: #66350F;
             color: white;
             padding: 8px 15px;
             border-radius: 6px;
@@ -453,7 +453,7 @@ body {
             display: none;
             background: #f9f9f9;
             padding: 15px;
-            border-left: 4px solid #007bff;
+            border-left: 4px solid #66350F;
             border-radius: 5px;
         }
 
@@ -476,7 +476,7 @@ body {
         }
 
         .contact-form button {
-            background: #007bff;
+            background: #66350F;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -485,7 +485,7 @@ body {
         }
 
         .contact-form button:hover {
-            background: #0056b3;
+            background: #65462e;
         }
 
         .back-home {
@@ -499,5 +499,10 @@ body {
         }
 .navbar a, 
 .nav-links li a {
-    color: #1b1818 !important; /* use !important to force it */
+    color: #1b1818 !important; 
+}
+
+#about-img {
+    height: 20rem;
+    width: 10%;
 }

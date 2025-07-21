@@ -25,7 +25,7 @@
             What started as handmade gifts for friends soon bloomed into a brand that celebrates authenticity, soul, and handcrafted elegance.
         </p>
     </div>
-    <img src="images/our-story.jpg" alt="Our Story Image">
+    <img id="about-img" src="uploads/image1.jpg" alt="Our Story Image">
 </div>
 
 <div class="cards">
@@ -42,6 +42,6 @@
         <p>Authenticity, Quality, Passion, and a commitment to celebrate imperfection as beauty.</p>
     </div>
 </div>
-
+<?php include('includes/footer.php'); ?>
 </body>
 </html>
