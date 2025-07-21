@@ -60,7 +60,7 @@ if (isset($_POST["submit_review"])) {
             <tr>
                 <td><?php echo $item["product_name"]; ?></td>
                 <td><?php echo $item["quantity"]; ?></td>
-                <td>$<?php echo $item["price"]; ?></td>
+                <td>Rs.<?php echo $item["price"]; ?></td>
             </tr>
             <?php endwhile; ?>
         </table>

@@ -72,6 +72,5 @@ $result = mysqli_query($conn, "SELECT * FROM cart WHERE user_id = $user_id");
     <?php endif; ?>
 
 </div>
-<?php include('includes/footer.php'); ?>
 </body>
 </html>
